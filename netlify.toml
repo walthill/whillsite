@@ -10,4 +10,4 @@
   from = "/about"
   to = "/site/about.html"
   status = 301
-  force = false
+  force = true
