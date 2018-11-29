@@ -1,2 +1,4 @@
+/site/*  /:splat
+
 /home              /
-/about              /site/about
+# /about              /site/about
