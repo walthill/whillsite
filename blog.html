@@ -3,10 +3,20 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="style/about.css">
+		<link rel="stylesheet" href="style/projects.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-		<title>About | Walter Hill</title>
+		
+		<script src="https://cdnjs.buttercms.com/buttercms-1.1.4.min.js"></script>
+		<script>
+  			var butter = Butter('0b97e7a76cc65bdfae0fbcfe9989497fd95c3846');
+  			butter.post.list({page: 1, page_size: 10}).then(function(response) {
+			  console.log(response)
+//			  document.getElementById("main").textContent = response;
+			})
+		</script>
+
+		<title>Blog | Walter Hill</title>
 	</head>
 	<body> 
 	<div class="page">
@@ -17,29 +27,17 @@
 			</div>
 			<div class="header-center">
 				<div class="nav">
-					<a  href="index.html">Home</a>
-					<a class="active" href="#">About</a>
+					<a href="index.html">Home</a>
+					<a href="about.html">About</a>
 					<a href="projects.html">Projects</a>
-					<a href="blog.html">Blog</a>
+					<a class="active" href="#">Blog</a>
 				</div>
 			</div>
 			<div></div>
 		</div>
 
-		<div class="content">
-			<div></div>
-			<div class="content-main">
-				<div class="content-photo">
-					<img src="img/me2.jpg" style="border-radius: 50%;display: block; margin-left: auto;margin-right: auto;width: 25%;">
-				</div>
-
-				<div class="content-text">
-					<div>
-					Walter Hill | walterhilldev@gmail.com <br><br>
-					 I am a programmer, game developer, and writer. I want to craft stories and worlds with a voice, and I want to work with others to bring characters and ideas to life. This site will be where I chronicle my journey to do great work and tell ever better stories.
-					</div>
-				</div>
-			</div>
+		<div class="content"> <!--https://embed.ly/code?url=http%3A%2F%2Fgithub.com%2Fwalthill-->
+			<div id="main" class="content-main">UNDER CONSTRUCTION</div>
 		</div>
 		
 		<footer class="footer">
@@ -61,9 +59,8 @@
 				</div>
 				<div class="copy">&copy Walter Hill | 2018</div>
 			</div>
-		</footer>
-		
-		<script src="js/index.js"></script>
+		</footer>		
+		<!--<script src="js/blog.js"></script>-->
 	</div>		
 	</body>
 </html>
