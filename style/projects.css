@@ -10,9 +10,15 @@
 }
 
 .logo img{
+	transition: transform .2s; /* Animation */
+	
 	padding-top: 10px;
 	padding-left: 45px;
 	width: 50%;
+}
+
+.logo img:hover {
+  transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .header-center{
@@ -33,6 +39,10 @@
 
 }
 
+.nav a:hover{
+	background-color: #ed6c44;	
+}
+
 .header a.active{
 	text-decoration: none;
 	background-color: dodgerblue;
@@ -46,20 +56,53 @@
 
 
 
+.content{
+	display: grid;
+	grid-template-columns: 20% 55% 25%;
+	text-align:center;
+	padding-bottom: 10px;
+/*	padding: 10px 10px;*/
+}
 
+.content-main{
+	display: grid;
+/*	grid-template-columns: : 40% 60%;
+	padding: 10px 10px;*/
+}
 
+.game-display{
+	margin: 10px; 
+}
 
+.game-title{
+	margin-top: 10px;
+}
 
+.game-title > a{
+	font-family: 'Roboto Thin';	
+	font-size: 30px;
+	color: dodgerblue;
+}
 
+.game-title > a:hover{
+	color: #ed6c44;	
+}
 
+.mySlides{
+	display: none;
+}
 
+.game-content{
+	background-color: #f1f1f1;
+	border-radius: 20px;
+	text-align: center;
+	border-radius: 10px;
+			font-size: 24px;
+	font-family: 'Roboto Thin';	
+	padding: 10px 100px;
 
-
-
-
-
-
-
+	margin-bottom: 50px;
+}
 
 .footer{
 /*	padding-top: 10px;
@@ -86,7 +129,13 @@
 	text-decoration: none;
 	font-color: dodgerblue;
 	font-size: 27px;
+	transition: transform .2s; /* Animation */
 }
+
+.icon a:hover {
+  transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 
 .footer-center{
 	text-align: center;
