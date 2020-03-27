@@ -91,6 +91,10 @@
 	font-family: 'Roboto Thin';	
 }
 
+.bold {
+	color: #E64C1E;	
+}
+
 .footer{
 /*	padding-top: 10px;
 	padding-left: 10px;

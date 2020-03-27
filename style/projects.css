@@ -88,6 +88,19 @@
 	color: #ed6c44;	
 }
 
+.bold {
+	color: #E64C1E;	
+}
+
+.body-link a{
+	color: dodgerblue	!important;
+}
+
+.body-link > a:hover{
+	color: #E64C1E	!important;
+}
+
+
 .mySlides{
 	display: none;
 }
